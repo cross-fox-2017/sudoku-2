@@ -13,6 +13,18 @@ class Sudoku {
 
 
 
-
+    board() {
+        // console.log("Sebelum :");
+        let count = 0
+        for (var i = 0; i < 9; i++) {
+            var arrPapan = [];
+            for (var j = 0; j < 9; j++) {
+                arrPapan.push(this._board_string[count])
+                count++;
+            }
+            this._papan.push(arrPapan)
+        }
+        return this._papan;
+    }
 
 }
